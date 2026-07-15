@@ -1,15 +1,47 @@
+---
+import "./hero.css";
+import DeveloperMonitor from "../monitor/DeveloperMonitor.astro";
+---
+
 <section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Software, die Prozesse einfacher macht.</h1>
 
-      <p class="subtitle">
-        Praxisnahe Odoo-, ERP- und CRM-Lösungen mit KI.
-      </p>
+    <div class="container hero-grid">
 
-      <a class="button" href="#projekt">
-        Projekt ansehen →
-      </a>
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                Heinz-Jörg Vornholt
+            </p>
+
+            <h1>
+                Software, die Prozesse einfacher macht.
+            </h1>
+
+            <p class="subtitle">
+                <span>Fachinformatiker für Anwendungsentwicklung</span>
+                <span>Business Software · ERP · Odoo</span>
+            </p>
+
+            <div class="hero-buttons">
+
+                <a class="button" href="#projects">
+                    Projekte
+                </a>
+
+                <a class="button secondary" href="#contact">
+                    Kontakt
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-monitor">
+
+            <DeveloperMonitor />
+
+        </div>
+
     </div>
-  </div>
+
 </section>
