@@ -1,19 +1,8 @@
-console.log("Monitor läuft");
+import { MonitorUI } from "./monitor-ui";
+import { MonitorController } from "./monitor-controller";
 
-const items = document.querySelectorAll(".boot-item");
+const ui = new MonitorUI();
 
-items.forEach((item) => {
+const controller = new MonitorController(ui);
 
-    (item as HTMLElement).classList.remove("visible");
-
-});
-
-items.forEach((item, index) => {
-
-    setTimeout(() => {
-
-        item.classList.add("visible");
-
-    }, 800 + index * 700);
-
-});
+controller.start();

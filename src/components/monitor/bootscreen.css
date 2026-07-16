@@ -49,6 +49,14 @@
 
     overflow:hidden;
 
+    transition:height .4s ease;
+
+}
+
+.progress.launch{
+
+    height:6px;
+
 }
 
 .progress-bar{
@@ -65,13 +73,41 @@
 
     border-radius:999px;
 
-    animation:bootProgress 4s linear forwards;
+    transition:
+        background .5s ease,
+        box-shadow .4s ease;
+
+}
+
+.progress-bar.launch{
+
+    background:linear-gradient(
+
+        to right,
+
+        #62F5E2,
+
+        #83FFFF
+
+    );
+
+}
+
+.progress-bar.glow{
+
+    box-shadow:
+
+        0 0 10px #62F5E2,
+
+        0 0 22px #62F5E2,
+
+        0 0 38px rgba(98,245,226,.9);
 
 }
 
 .boot-list{
 
-    margin-top:24px;
+    margin-top:0px;
 
     display:flex;
 
@@ -105,21 +141,22 @@
 
 }
 
+.boot-screen {
 
-@keyframes bootProgress{
+    opacity: 1;
 
-    0%{
-
-        width:0;
-
-    }
-
-    100%{
-
-        width:100%;
-
-    }
+    transition:
+        opacity 500ms ease,
+        visibility 500ms ease;
 
 }
 
+.boot-screen.hidden {
 
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+}
