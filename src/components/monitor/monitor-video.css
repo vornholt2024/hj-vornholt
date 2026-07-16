@@ -1,0 +1,17 @@
+.monitor-video{
+
+    position:absolute;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#000;
+
+    color:white;
+
+}
