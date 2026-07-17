@@ -5,23 +5,27 @@ export class VideoPlayer {
         private readonly video: HTMLVideoElement
     ) {}
 
-    async play() {
+async play(): Promise<boolean> {
 
-        try {
+    try {
 
-            await this.video.play();
+        await this.video.play();
 
-        }
-        catch (error) {
-
-            console.error(
-                "Video konnte nicht gestartet werden.",
-                error
-            );
-
-        }
+        return true;
 
     }
+    catch (error) {
+
+        console.error(
+            "Video konnte nicht gestartet werden.",
+            error
+        );
+
+        return false;
+
+    }
+
+}
 
     pause() {
 
@@ -32,6 +36,26 @@ export class VideoPlayer {
     restart() {
 
         this.video.currentTime = 0;
+
+    }
+
+    async waitUntilReady(): Promise<void> {
+
+        if (this.video.readyState >= HTMLMediaElement.HAVE_ENOUGH_DATA) {
+
+            return;
+
+        }
+
+        await new Promise<void>(resolve => {
+
+            this.video.addEventListener(
+                "canplay",
+                () => resolve(),
+                { once: true }
+            );
+
+        });
 
     }
 

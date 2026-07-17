@@ -12,6 +12,12 @@ export class MonitorUI {
 
     readonly portfolioVideo: HTMLVideoElement;
 
+    readonly monitorDisplay: HTMLElement;
+
+    readonly powerOverlay: HTMLElement;
+
+    readonly glow: HTMLElement;
+
     constructor() {
 
         this.bootScreen =
@@ -31,6 +37,29 @@ export class MonitorUI {
 
         this.portfolioVideo =
             document.getElementById("portfolioVideo") as HTMLVideoElement;
+
+        this.monitorDisplay =
+            document.getElementById(
+            "monitorDisplay"
+            ) as HTMLElement;
+
+        this.powerOverlay =
+            document.getElementById(
+                "powerOverlay"
+            ) as HTMLElement;
+
+       this.glow =
+            document.getElementById(
+            "monitorGlow"
+            ) as HTMLElement;
+
+    }
+
+    powerOn() {
+
+        this.glow.classList.add("on");
+
+        this.powerOverlay.classList.add("off");
 
     }
 
@@ -81,6 +110,12 @@ export class MonitorUI {
     hideVideo() {
 
         this.monitorVideo.classList.remove("visible");
+
+    }
+
+    hideGlow() {
+
+        this.glow.classList.remove("on");
 
     }
 

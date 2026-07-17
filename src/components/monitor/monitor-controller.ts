@@ -51,7 +51,13 @@ export class MonitorController {
 
         this.changeState(MonitorState.POWER_ON);
 
-        await this.delay(250);
+        await this.delay(400);
+
+        this.ui.powerOn();
+
+        await this.delay(350);
+
+        this.ui.hideGlow();
 
     }
 
@@ -111,9 +117,19 @@ export class MonitorController {
 
         this.video.restart();
 
-        await this.video.play();
+        await this.video.waitUntilReady();
 
+        await this.delay(300);
+        
         this.ui.showVideo();
+
+        const started = await this.video.play();
+
+        if (!started) {
+
+            return;
+
+        }
 
     }
 
