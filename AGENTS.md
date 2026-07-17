@@ -1,22 +1,43 @@
-## Development
+# AI Project Instructions
 
-When starting the dev server, use background mode:
+This repository uses a centralized documentation structure.
 
-```
-astro dev --background
-```
+Before making significant changes, read the following documents in this order:
 
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
+1. README.md
+   Project overview, goals and technologies.
 
-## Documentation
+2. STYLEGUIDE.md
+   Coding conventions, naming rules, TypeScript and CSS guidelines.
 
-Full documentation: https://docs.astro.build
+3. ARCHITECTURE.md
+   Project philosophy, architecture, design principles and important technical decisions.
 
-Consult these guides before working on related tasks:
+4. PROJECT_STATUS.md
+   Current development status, roadmap and upcoming work.
 
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+## General Principles
+
+- Follow the coding conventions defined in `STYLEGUIDE.md`.
+- Respect the architecture and philosophy documented in `ARCHITECTURE.md`.
+- Prefer simple, readable and maintainable solutions.
+- Avoid unnecessary abstractions, frameworks and dependencies.
+- Extend existing code before introducing new structures.
+- Keep components focused on a single responsibility.
+- Use meaningful and descriptive names for variables, functions and components.
+- Keep the codebase consistent with the existing architecture.
+- Do not duplicate functionality.
+- Document only long-term architectural decisions.
+- If a requested change conflicts with the documented architecture, explain the conflict before implementing it.
+
+## Goal
+
+The objective of this repository is not to demonstrate the most complex implementation.
+
+The objective is to demonstrate professional software engineering through:
+
+- clean architecture
+- maintainable code
+- thoughtful design
+- clear documentation
+- consistent development practices
