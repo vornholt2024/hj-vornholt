@@ -16,8 +16,6 @@ export class MonitorUI {
 
     readonly powerOverlay: HTMLElement;
 
-    readonly glow: HTMLElement;
-
     constructor() {
 
         this.bootScreen =
@@ -48,16 +46,9 @@ export class MonitorUI {
                 "powerOverlay"
             ) as HTMLElement;
 
-       this.glow =
-            document.getElementById(
-            "monitorGlow"
-            ) as HTMLElement;
-
     }
 
     powerOn() {
-
-        this.glow.classList.add("on");
 
         this.powerOverlay.classList.add("off");
 
@@ -110,12 +101,6 @@ export class MonitorUI {
     hideVideo() {
 
         this.monitorVideo.classList.remove("visible");
-
-    }
-
-    hideGlow() {
-
-        this.glow.classList.remove("on");
 
     }
 

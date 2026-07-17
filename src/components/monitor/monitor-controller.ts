@@ -57,8 +57,6 @@ export class MonitorController {
 
         await this.delay(350);
 
-        this.ui.hideGlow();
-
     }
 
     private async boot() {
