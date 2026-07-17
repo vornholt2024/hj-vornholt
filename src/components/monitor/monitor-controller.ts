@@ -24,14 +24,14 @@ export class MonitorController {
 
     }
 
-    private registerVideoEvents() {
+    // private registerVideoEvents() {
 
-/*         this.ui.portfolioVideo.addEventListener(
-            "ended",
-            () => this.loopVideo()
-        ); */
+    //     this.ui.portfolioVideo.addEventListener(
+    //         "ended",
+    //         () => this.loopVideo()
+    //     ); 
 
-    }
+    // }
 
     private changeState(newState: MonitorState) {
 

@@ -1,46 +1,108 @@
-# Astro Starter Kit: Basics
+# hj-vornholt.de
 
-```sh
-npm create astro@latest -- --template basics
-```
+Ein modernes Entwickler-Portfolio, das Softwareentwicklung, Architektur und ERP-Lösungen praxisnah präsentiert.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Das Projekt dient als persönliche Portfolio-Website und dokumentiert reale Entwicklungsprojekte, technische Entscheidungen und die eigene Arbeitsweise als Softwareentwickler.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+# Ziele
+
+Die Website verfolgt drei zentrale Ziele:
+
+* Fachliche Kompetenz nachvollziehbar präsentieren
+* Eigene Projekte verständlich dokumentieren
+* Einen realistischen Einblick in die Softwareentwicklung geben
+
+Im Mittelpunkt stehen technische Inhalte statt Marketing.
+
+---
+
+# Technologien
+
+Aktuell eingesetzte Technologien:
+
+* Astro
+* TypeScript
+* HTML5
+* CSS3
+* Git & GitHub
+
+Je nach Projekt werden zusätzlich weitere Technologien vorgestellt oder integriert.
+
+---
+
+# Projektstruktur
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+src/
+├── assets/
+├── components/
+├── layouts/
+├── pages/
+├── scripts/
+├── styles/
+├── types/
+└── utils/
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Die Struktur folgt einer komponentenorientierten Architektur mit klaren Verantwortlichkeiten.
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+# Entwicklungsprinzipien
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Das Projekt orientiert sich an folgenden Grundsätzen:
 
-## 👀 Want to learn more?
+* Lesbarkeit vor Komplexität
+* Wartbarkeit vor kurzfristigen Optimierungen
+* Eigene Lösungen vor unnötigen Frameworks
+* Klare Architektur statt schneller Workarounds
+* Dokumentation als Bestandteil der Softwareentwicklung
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+# Dokumentation
+
+Die Projektdokumentation besteht aus vier Dokumenten:
+
+| Datei               | Inhalt                                                      |
+| ------------------- | ----------------------------------------------------------- |
+| `README.md`         | Projektüberblick und Einstieg                               |
+| `STYLEGUIDE.md`     | Entwicklungs- und Coding-Richtlinien                        |
+| `ARCHITECTURE.md`   | Architektur, Projektphilosophie und wichtige Entscheidungen |
+| `PROJECT_STATUS.md` | Aktueller Entwicklungsstand, Roadmap und Meilensteine       |
+
+---
+
+# Entwicklungsworkflow
+
+Die Entwicklung erfolgt iterativ.
+
+Neue Funktionen werden zunächst konzipiert, anschließend implementiert und zum Schluss dokumentiert. Größere Architekturänderungen werden bewusst getroffen und nachvollziehbar begründet.
+
+---
+
+# Zielgruppe
+
+Diese Website richtet sich insbesondere an:
+
+* Recruiter
+* Softwareentwickler
+* ERP-Unternehmen
+* technische Projektleiter
+* IT-Entscheider
+
+---
+
+# Projektstatus
+
+Das Projekt befindet sich in aktiver Entwicklung.
+
+Der aktuelle Entwicklungsstand sowie geplante Erweiterungen sind in `PROJECT_STATUS.md` dokumentiert.
+
+---
+
+# Lizenz
+
+Alle Inhalte und Quelltexte dieses Repositories dienen der Präsentation eigener Arbeiten, sofern nicht anders gekennzeichnet.
